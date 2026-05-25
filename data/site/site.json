@@ -1,0 +1,17 @@
+{
+  "name": "Vignesh Sathyamoorthy",
+  "title": "Senior Frontend Engineer & Tech Lead",
+  "tagline": "React · Next.js · Shopify · Headless Commerce",
+  "intro": "Senior Frontend Engineer with 10+ years building high-performance web applications and e-commerce for global brands including Coty, O'Reilly Auto Parts, Redsea, and Universal Music Group. I lead frontend and Shopify teams, ship headless commerce at scale, and care about clean architecture, Core Web Vitals, and mentoring engineers.",
+  "email": "vignesh1714@gmail.com",
+  "linkedin": "https://www.linkedin.com/in/vignesh-sathya-moorthy",
+  "github": "https://github.com/vignesh1714",
+  "aboutSummary": "I'm a Senior Frontend Engineer and Tech Lead with 10+ years of experience specializing in React, Next.js, Shopify Plus, and multi-CMS architectures. I currently lead frontend and Shopify app development at Photon, with a proven track record delivering headless commerce for internationally recognised brands.",
+  "aboutExpertise": [
+    "Tech lead for frontend & Shopify — architecture, code reviews, mentoring",
+    "Coty, O'Reilly Auto Parts, Redsea, Universal Music Group — production delivery",
+    "React, Next.js, Shopify Plus, AEM, headless CMS (Contentful, Strapi, Builder.io)",
+    "Microfrontends, SSR/SSG, Core Web Vitals, WCAG accessibility"
+  ],
+  "aboutExperience": "I've delivered 10+ production-grade applications across e-commerce, retail, real estate, and entertainment for US, UK, AU, and Middle East clients. I translate Figma designs into pixel-perfect, performance-optimised builds and align engineering milestones with business goals."
+}

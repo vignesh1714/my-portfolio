@@ -1,0 +1,138 @@
+[
+  {
+    "slug": "coty-multi-brand-shopify",
+    "title": "Coty Inc. — Multi-Brand Shopify Storefronts",
+    "shortDescription": "Led frontend for 4 international Coty storefronts across 15+ countries with headless CMS, geo-redirection, and localisation.",
+    "description": "Led frontend development for four international storefronts across the Coty brand portfolio, serving 15+ countries. Implemented headless CMS integration, geo-based redirection, and multi-currency/language support. Delivered scalable, performance-optimised solutions in an Agile environment as Tech Lead at Photon/Sedin.",
+    "techStack": ["Shopify", "React", "Vue.js", "Next.js", "Headless CMS", "Localisation"],
+    "liveUrl": "https://kyliejennercosmetics.eu",
+    "image": "/projects/coty-kyliejenner/cover.png",
+    "featured": true,
+    "challenges": "Multi-brand, multi-region architecture with shared components while preserving distinct brand identities and locale-specific content.",
+    "solutions": "Headless CMS-driven content models, geo-based routing, and reusable design-system components with brand-level theming."
+  },
+  {
+    "slug": "oreilly-microfrontend-platform",
+    "title": "O'Reilly Auto Parts — Microfrontend Platform",
+    "shortDescription": "High-traffic React + AEM microfrontend platform with SSR/SSG for millions of monthly US visitors.",
+    "description": "Built a high-traffic microfrontend architecture serving millions of monthly users across the United States. Implemented SSR and SSG strategies for SEO performance and fast page loads on a large-scale retail platform using React and Adobe Experience Manager (AEM).",
+    "techStack": ["React", "Adobe Experience Manager", "MFE", "SSR", "SSG"],
+    "liveUrl": "https://www.oreillyauto.com",
+    "image": null,
+    "featured": true,
+    "challenges": "Coordinating multiple microfrontends with consistent performance and SEO across a massive retail catalogue.",
+    "solutions": "MFE boundaries with shared shell, SSG/SSR per route type, and performance budgets aligned to Core Web Vitals."
+  },
+  {
+    "slug": "redsea-headless-ecommerce",
+    "title": "Redsea — Headless E-Commerce (Saudi Arabia)",
+    "shortDescription": "Headless Shopify + Next.js storefront for one of Saudi Arabia's largest retail chains.",
+    "description": "Built headless Shopify storefront for Redsea, one of Saudi Arabia's leading retail chains, using Next.js. Delivered a fully responsive, mobile-first experience for web and mobile app users with performance-focused architecture.",
+    "techStack": ["Next.js", "Shopify", "Headless Commerce", "Mobile-First"],
+    "liveUrl": "https://redsea.com/en",
+    "image": "/projects/redsea/cover.png",
+    "featured": true,
+    "challenges": "Mobile-first commerce at scale with headless Shopify and fast catalogue browsing on slower networks.",
+    "solutions": "Next.js SSR/ISR, image optimisation, and a component architecture tuned for touch-first shopping flows."
+  },
+  {
+    "slug": "universal-music-checkout",
+    "title": "Universal Music Group — Shopify Checkout Extension",
+    "shortDescription": "Custom tax form integrated into Shopify checkout for UMG's global music commerce platform.",
+    "description": "Developed and integrated a custom tax form within the Shopify checkout flow for Universal Music Group's global music platform, extending checkout with compliant data capture without leaving the native Shopify experience.",
+    "techStack": ["React", "Shopify", "Checkout Extensions", "Shopify Plus"],
+    "liveUrl": "https://www.universalmusic.com",
+    "image": null,
+    "featured": false,
+    "challenges": "Extending Shopify checkout UI while meeting tax compliance and checkout performance requirements.",
+    "solutions": "Shopify Checkout UI extension with validated form state and server-side tax handling integration."
+  },
+  {
+    "slug": "rediy-real-estate",
+    "title": "RedIY — Real Estate Platform (Australia)",
+    "shortDescription": "Private property listings with Google Maps API for location-based search across Australia.",
+    "description": "Built a private property listing platform integrating Google Maps JavaScript API for location-based property search. Delivered responsive listing flows, map-driven discovery, and Rails-backed data integration for the Australian market.",
+    "techStack": ["React", "Redux", "Ruby on Rails", "Google Maps API"],
+    "liveUrl": "https://www.rediy.com.au",
+    "image": null,
+    "featured": false,
+    "challenges": "Map-heavy UI with performant marker clustering and sync with filtered listing results.",
+    "solutions": "Redux-managed filter state, debounced map bounds updates, and lazy-loaded listing cards."
+  },
+  {
+    "slug": "sir-the-label",
+    "title": "Sir The Label — Fashion E-Commerce",
+    "shortDescription": "Premium fashion storefront with refined UX, lookbook-driven merchandising, and performant product discovery.",
+    "description": "Frontend development for Sir The Label's e-commerce experience — balancing editorial lookbook content with conversion-focused product pages and mobile shopping flows.",
+    "techStack": ["Shopify", "React", "Liquid", "Tailwind CSS"],
+    "liveUrl": null,
+    "image": "/projects/sirthelabel/cover.png",
+    "featured": true,
+    "challenges": "Brand-forward editorial layouts without sacrificing checkout performance.",
+    "solutions": "Lazy-loaded media, optimised theme sections, and reusable product card components."
+  },
+  {
+    "slug": "pura",
+    "title": "Pura — Smart Home Fragrance",
+    "shortDescription": "E-commerce and product storytelling for a connected home fragrance brand.",
+    "description": "Built customer-facing storefront and marketing experiences for Pura's smart fragrance ecosystem, focusing on product education, subscription flows, and responsive merchandising.",
+    "techStack": ["Shopify", "React", "Next.js", "Headless CMS"],
+    "liveUrl": "https://pura.com",
+    "image": "/projects/pura/cover.png",
+    "featured": false,
+    "challenges": "Explaining connected hardware benefits within a traditional e-commerce funnel.",
+    "solutions": "Modular content sections, interactive product highlights, and clear CTA paths for device + refill purchases."
+  },
+  {
+    "slug": "educated-beard",
+    "title": "Educated Beard — Grooming E-Commerce",
+    "shortDescription": "Shopify storefront for a men's grooming brand with subscription-friendly product pages.",
+    "description": "Developed a Shopify-powered storefront for Educated Beard with brand-consistent styling, subscription-ready product templates, and mobile-first checkout optimisation.",
+    "techStack": ["Shopify", "Liquid", "JavaScript", "CSS"],
+    "liveUrl": null,
+    "image": "/projects/educated-beard/cover.png",
+    "gallery": [
+      "/projects/educated-beard/cover.png",
+      "/projects/educated-beard/challenge.png"
+    ],
+    "featured": false,
+    "challenges": "Subscription UX and variant-heavy product catalogue on a lean theme budget.",
+    "solutions": "Custom Liquid sections, clear variant selectors, and performance-tuned asset loading."
+  },
+  {
+    "slug": "vanessa-megan",
+    "title": "Vanessa Megan — Natural Beauty",
+    "shortDescription": "Luxury natural beauty e-commerce with ingredient-led storytelling and refined mobile UX.",
+    "description": "Frontend work for Vanessa Megan's natural beauty platform — ingredient storytelling, collection browsing, and checkout flows aligned with a premium brand aesthetic.",
+    "techStack": ["Shopify", "React", "JavaScript", "SCSS"],
+    "liveUrl": null,
+    "image": "/projects/vanessamegan/cover.png",
+    "featured": false,
+    "challenges": "Rich editorial content alongside fast product listing pages on mobile.",
+    "solutions": "Progressive image loading, section-based theme architecture, and accessible colour/contrast tokens."
+  },
+  {
+    "slug": "sound-health",
+    "title": "SoundHealth — Health & Wellness Platform",
+    "shortDescription": "Patient-facing health platform UI with accessible forms and responsive care journeys.",
+    "description": "Built responsive UI for SoundHealth's digital health experiences — appointment flows, educational content, and accessible form patterns for diverse user groups.",
+    "techStack": ["React", "TypeScript", "Tailwind CSS", "WCAG"],
+    "liveUrl": null,
+    "image": "/projects/soundhealth/cover.png",
+    "featured": false,
+    "challenges": "Accessibility and clarity for health-critical user journeys across devices.",
+    "solutions": "WCAG-focused components, form validation patterns, and responsive layouts tested on mobile-first breakpoints."
+  },
+  {
+    "slug": "rcc-gemini",
+    "title": "RCC Gemini — Corporate Web Platform",
+    "shortDescription": "Corporate marketing site with CMS-driven pages and performance-focused React frontend.",
+    "description": "Delivered a corporate web platform for RCC Gemini with CMS-integrated page building, lead-capture forms, and a maintainable React component library.",
+    "techStack": ["React", "Headless CMS", "GraphQL", "Netlify"],
+    "liveUrl": null,
+    "image": "/projects/rcc-gemini/cover.png",
+    "featured": false,
+    "challenges": "Marketing team autonomy for page updates without developer involvement per launch.",
+    "solutions": "Composable page sections mapped to CMS blocks and preview-friendly content workflows."
+  }
+]

@@ -1,0 +1,58 @@
+{
+  "frontend": {
+    "title": "Frontend Development",
+    "items": [
+      "React & React Hooks",
+      "Next.js",
+      "Gatsby",
+      "TypeScript / JavaScript (ES6+)",
+      "HTML5 & Semantic Markup",
+      "CSS3 / Tailwind CSS / CSS-in-JS",
+      "Responsive & Mobile-First Design",
+      "Accessibility (WCAG)"
+    ]
+  },
+  "shopify": {
+    "title": "Shopify Development",
+    "items": [
+      "Liquid templating",
+      "Shopify Theme Development",
+      "Shopify Storefront API",
+      "Headless Shopify",
+      "Custom checkout experiences",
+      "App development (Polaris)"
+    ]
+  },
+  "cms": {
+    "title": "Headless CMS",
+    "items": [
+      "Strapi",
+      "Contentful",
+      "Builder.io",
+      "GraphQL & REST APIs",
+      "Content modeling",
+      "Preview & draft workflows"
+    ]
+  },
+  "performance": {
+    "title": "Performance Optimization",
+    "items": [
+      "Core Web Vitals",
+      "Lighthouse optimization",
+      "Image optimization",
+      "Code splitting & lazy loading",
+      "Edge caching (Vercel, Netlify)",
+      "Bundle analysis"
+    ]
+  },
+  "integrations": {
+    "title": "API Integrations",
+    "items": [
+      "REST & GraphQL APIs",
+      "Third-party service integration",
+      "Payment gateways",
+      "Analytics (GA4, Mixpanel)",
+      "Auth (Auth0, NextAuth)"
+    ]
+  }
+}
