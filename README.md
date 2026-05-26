@@ -1,6 +1,6 @@
 # Developer Portfolio (Next.js)
 
-Next.js 15 App Router port of the Gatsby portfolio. Content is loaded from JSON files in `data/` instead of GraphQL.
+Personal developer portfolio built with Next.js 15 App Router. Content is loaded from JSON files in `data/`—no CMS or GraphQL required.
 
 ## Prerequisites
 
