@@ -4,20 +4,41 @@ import { useState } from "react";
 
 export default function ContactForm() {
   const [status, setStatus] = useState("idle");
+  const [errorMessage, setErrorMessage] = useState("");
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
+    if (status === "error") {
+      setStatus("idle");
+      setErrorMessage("");
+    }
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus("sending");
-    setTimeout(() => {
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await response.json();
+
+      if (!response.ok) {
+        throw new Error(result.error || "Failed to send message.");
+      }
+
       setStatus("success");
       setFormData({ name: "", email: "", message: "" });
-    }, 800);
+    } catch (error) {
+      setStatus("error");
+      setErrorMessage(error.message || "Something went wrong. Please try again.");
+    }
   };
 
   return (
@@ -76,6 +97,11 @@ export default function ContactForm() {
       </button>
       {status === "success" && (
         <p className="text-sm text-green-600 dark:text-green-400">Thanks! I&apos;ll get back to you soon.</p>
+      )}
+      {status === "error" && (
+        <p className="text-sm text-red-600 dark:text-red-400" role="alert">
+          {errorMessage}
+        </p>
       )}
     </form>
   );

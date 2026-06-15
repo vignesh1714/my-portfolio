@@ -13,6 +13,7 @@ const navLinks = [
   { href: "/skills", label: "Skills" },
   { href: "/playground", label: "JS Playground" },
   { href: "/contact", label: "Contact" },
+  // { href: "/task", label: "Tasks" }, // interview practice — keep route, hide from nav
 ];
 
 export default function Navbar() {

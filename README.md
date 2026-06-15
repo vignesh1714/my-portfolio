@@ -36,6 +36,15 @@ Optional:
 | Variable | Description |
 |----------|-------------|
 | `NEXT_PUBLIC_SITE_URL` | Canonical site URL for metadata (default: `https://yourportfolio.netlify.app`) |
+| `CONTACT_TO_EMAIL` | Inbox that receives contact form submissions |
+| `SMTP_HOST` | SMTP server (Gmail: `smtp.gmail.com`) |
+| `SMTP_PORT` | SMTP port (Gmail: `587`) |
+| `SMTP_SECURE` | `true` for port 465, otherwise `false` |
+| `SMTP_USER` | SMTP login email |
+| `SMTP_PASS` | SMTP password or Gmail [app password](https://myaccount.google.com/apppasswords) |
+| `SMTP_FROM` | Optional `From` header (defaults to `SMTP_USER`) |
+
+Copy `.env.example` to `.env.local` and fill in SMTP values before using the contact form.
 
 ## Pages
 

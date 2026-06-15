@@ -1,8 +1,31 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, type ChangeEvent, type CSSProperties } from "react";
 
-const userDataJson = [
+interface UserData {
+  user_id: string;
+  email: string;
+  name?: string;
+  given_name: string;
+  family_name: string;
+  nickname?: string;
+  last_ip?: string;
+  logins_count?: number;
+  created_at: string;
+  updated_at: string;
+  last_login?: string;
+  email_verified: boolean;
+}
+
+interface Task {
+  id: number;
+  title: string;
+  completed: boolean;
+}
+
+type NestedNumberArray = Array<number | NestedNumberArray>;
+
+const userDataJson: UserData[] = [
   {
     user_id: "583c3ac3f38e84297c002546",
     email: "test@test.com",
@@ -70,7 +93,7 @@ const userDataJson = [
   },
 ];
 
-const styles = {
+const styles: Record<string, CSSProperties> = {
   main: {
     padding: "20px",
   },
@@ -79,10 +102,10 @@ const styles = {
   },
 };
 
-const arr1 = [1, [2, 3, [4, 5]], 6];
+const arr1: NestedNumberArray = [1, [2, 3, [4, 5]], 6];
 
-function flattenArr(arrData) {
-  let result = [];
+function flattenArr(arrData: NestedNumberArray): number[] {
+  let result: number[] = [];
   for (const item of arrData) {
     if (Array.isArray(item)) {
       result = result.concat(flattenArr(item));
@@ -93,11 +116,12 @@ function flattenArr(arrData) {
   return result;
 }
 
-function sumOfArray(num) {
-  let result;
+function sumOfArray(num: number) {
+  let result = num;
   return {
     count() {
-      return (result = num + 1);
+      result = num + 1;
+      return result;
     },
     getValue() {
       return result;
@@ -108,9 +132,9 @@ function sumOfArray(num) {
 export default function InterviewTask() {
   const [count, setCount] = useState(0);
   const [textValue, setValue] = useState("");
-  const [task, setTask] = useState([]);
+  const [task, setTask] = useState<Task[]>([]);
   const [search, setSearch] = useState("");
-  const [flatteredArray, setFlatteredArray] = useState("");
+  const [flatteredArray, setFlatteredArray] = useState<number[]>([]);
 
   const filteredUserData = userDataJson.filter((item) => item.name?.includes(search));
 
@@ -120,7 +144,7 @@ export default function InterviewTask() {
     setValue("");
   };
 
-  const deleteItem = (itemId) => {
+  const deleteItem = (itemId: number) => {
     setTask(task.filter((item) => item.id !== itemId));
   };
 
@@ -139,7 +163,7 @@ export default function InterviewTask() {
         <input
           type="text"
           className="todo-create"
-          onChange={(e) => setValue(e.target.value)}
+          onChange={(e: ChangeEvent<HTMLInputElement>) => setValue(e.target.value)}
           value={textValue}
         />
         <button type="button" onClick={createItem}>
@@ -158,7 +182,11 @@ export default function InterviewTask() {
         <br />
         <br />
         <br />
-        <input type="text" onChange={(e) => setSearch(e.target.value)} value={search} />
+        <input
+          type="text"
+          onChange={(e: ChangeEvent<HTMLInputElement>) => setSearch(e.target.value)}
+          value={search}
+        />
         <table>
           <thead>
             <tr>
