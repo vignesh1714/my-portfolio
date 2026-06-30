@@ -1,0 +1,40 @@
+[
+  {
+    "period": "June 2025 – Present",
+    "company": "Photon · Chennai, India",
+    "role": "Tech Lead — Frontend & Shopify",
+    "highlights": [
+      "Lead cross-functional frontend and Shopify app development teams with a focus on scalable architecture.",
+      "Defined technical roadmap for headless e-commerce builds, aligning engineering milestones with business goals.",
+      "Conduct regular code reviews, establish development standards, and mentor junior and mid-level engineers."
+    ]
+  },
+  {
+    "period": "Dec 2015 – June 2025",
+    "company": "Sedin Technologies · Chennai, India",
+    "role": "Senior Software Engineer (Frontend)",
+    "highlights": [
+      "Delivered 10+ production-grade web applications across e-commerce, real estate, retail, and entertainment verticals for US, UK, AU, and Middle East clients.",
+      "Led frontend architecture for Coty Inc.'s multi-brand, multi-region Shopify storefronts serving 15+ countries.",
+      "Built O'Reilly Auto Parts microfrontend platform handling millions of monthly visitors with SSR/SSG.",
+      "Developed Redsea's headless e-commerce platform and UMG's Shopify Checkout Extension."
+    ]
+  },
+  {
+    "period": "2017 – 2018",
+    "company": "Jifflenow (via Sedin) · Bangalore",
+    "role": "Senior Frontend Consultant",
+    "highlights": [
+      "Built reusable core React component library for a meeting scheduling SaaS platform.",
+      "Optimised application performance for speed and scalability under concurrent user load."
+    ]
+  },
+  {
+    "period": "Oct – Dec 2015",
+    "company": "WonderWrks · Chennai, India",
+    "role": "UI Developer",
+    "highlights": [
+      "Collaborated with design and backend teams to build responsive UI solutions for client-facing web applications."
+    ]
+  }
+]

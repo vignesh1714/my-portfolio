@@ -1,8 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./app/**/*.{js,jsx}",
-    "./components/**/*.{js,jsx}",
+    "./app/**/*.{js,jsx,ts,tsx}",
+    "./components/**/*.{js,jsx,ts,tsx}",
+    "./hooks/**/*.{js,jsx,ts,tsx}",
   ],
   darkMode: "class",
   theme: {
@@ -36,6 +37,7 @@ module.exports = {
         "fade-in": "fadeIn 0.5s ease-out",
         float: "float 6s ease-in-out infinite",
         "pulse-glow": "pulseGlow 4s ease-in-out infinite",
+        ticker: "ticker 28s linear infinite",
       },
       keyframes: {
         fadeIn: {
@@ -49,6 +51,10 @@ module.exports = {
         pulseGlow: {
           "0%, 100%": { opacity: "0.4" },
           "50%": { opacity: "0.7" },
+        },
+        ticker: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-50%)" },
         },
       },
     },
