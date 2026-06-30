@@ -28,35 +28,6 @@ export default function InnerEdgeScroll({
     }
   }, []);
 
-  const tick = useCallback(() => {
-    const el = containerRef.current;
-    if (!el || directionRef.current === 0 || pointerDownRef.current) {
-      rafRef.current = null;
-      return;
-    }
-
-    const maxScroll = el.scrollHeight - el.clientHeight;
-    if (maxScroll <= 0) {
-      stopAutoScroll();
-      setActiveEdge(null);
-      return;
-    }
-
-    const next = el.scrollTop + directionRef.current * scrollSpeed;
-    el.scrollTop = Math.max(0, Math.min(maxScroll, next));
-
-    if (
-      (directionRef.current > 0 && el.scrollTop >= maxScroll) ||
-      (directionRef.current < 0 && el.scrollTop <= 0)
-    ) {
-      stopAutoScroll();
-      setActiveEdge(null);
-      return;
-    }
-
-    rafRef.current = requestAnimationFrame(tick);
-  }, [scrollSpeed, stopAutoScroll]);
-
   const startAutoScroll = useCallback(
     (direction, edge) => {
       const el = containerRef.current;
@@ -69,11 +40,41 @@ export default function InnerEdgeScroll({
 
       directionRef.current = direction;
       setActiveEdge(edge);
+
+      const tick = () => {
+        const node = containerRef.current;
+        if (!node || directionRef.current === 0 || pointerDownRef.current) {
+          rafRef.current = null;
+          return;
+        }
+
+        const limit = node.scrollHeight - node.clientHeight;
+        if (limit <= 0) {
+          stopAutoScroll();
+          setActiveEdge(null);
+          return;
+        }
+
+        const next = node.scrollTop + directionRef.current * scrollSpeed;
+        node.scrollTop = Math.max(0, Math.min(limit, next));
+
+        if (
+          (directionRef.current > 0 && node.scrollTop >= limit) ||
+          (directionRef.current < 0 && node.scrollTop <= 0)
+        ) {
+          stopAutoScroll();
+          setActiveEdge(null);
+          return;
+        }
+
+        rafRef.current = requestAnimationFrame(tick);
+      };
+
       if (rafRef.current === null) {
         rafRef.current = requestAnimationFrame(tick);
       }
     },
-    [tick]
+    [scrollSpeed, stopAutoScroll]
   );
 
   const handleStripLeave = useCallback(() => {
